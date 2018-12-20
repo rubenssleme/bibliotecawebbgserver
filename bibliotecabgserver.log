@@ -1,0 +1,284 @@
+2018-12-18 17:55:35,733 ERROR [RepositorioUsuarioBD] Ocorreu algum erro durante o armazenamento do Usuario [id=null, nome=Rubens Leme, dataCadastro=null]. 
+Detalhe: java.lang.NullPointerException
+2018-12-18 18:02:26,248 ERROR [RepositorioUsuarioBD] Ocorreu algum erro durante o armazenamento do Usuario [id=null, nome=Rubens Leme, dataCadastro=null]. 
+Detalhe: java.lang.NullPointerException
+2018-12-18 18:03:42,731 ERROR [RepositorioUsuarioBD] Ocorreu algum erro durante o armazenamento do Usuario [id=1, nome=Rubens Leme, dataCadastro=null]. 
+Detalhe: java.lang.NullPointerException
+2018-12-18 18:11:12,892 ERROR [RepositorioUsuarioBD] Ocorreu algum erro durante o armazenamento do Usuario [id=1, nome=Rubens Leme, dataCadastro=null]. 
+Detalhe: java.lang.NullPointerException
+2018-12-18 18:15:12,661 ERROR [RepositorioUsuarioBD] Ocorreu algum erro durante o armazenamento do Usuario [id=1, nome=Rubens Leme, dataCadastro=null]. 
+Detalhe: java.lang.NullPointerException
+2018-12-18 18:33:34,748 INFO  [RemoteTestRunner] Starting RemoteTestRunner on LM-RUBENS-LEME with PID 5036 (started by laramara in D:\projetos\github-projetos\bibliotecawebbgserver)
+2018-12-18 18:33:34,748 INFO  [RemoteTestRunner] No active profile set, falling back to default profiles: default
+2018-12-18 18:33:34,810 INFO  [AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1972e513: startup date [Tue Dec 18 18:33:34 BRST 2018]; root of context hierarchy
+2018-12-18 18:33:35,076 INFO  [Version] HV000001: Hibernate Validator 6.0.4.Final
+2018-12-18 18:33:35,467 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-18 18:33:35,639 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'websocketContainerCustomizer' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration.class]]
+2018-12-18 18:33:35,784 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-12-18 18:33:35,784 INFO  [ConfigurationClassBeanDefinitionReader] Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-12-18 18:33:36,081 INFO  [AutowiredAnnotationBeanPostProcessor] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-18 18:33:36,159 INFO  [ThreadPoolTaskExecutor] Initializing ExecutorService 
+2018-12-18 18:33:36,159 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:33:36,160 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:33:36,196 INFO  [ThreadPoolTaskScheduler] Initializing ExecutorService  'myScheduler'
+2018-12-18 18:33:36,196 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myScheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:33:36,211 WARN  [AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceInitializerPostProcessor': Unsatisfied dependency expressed through field 'beanFactory'; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi] for bean with name 'servicoBibliotecaBGServer' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi
+2018-12-18 18:33:36,211 INFO  [ThreadPoolTaskScheduler] Shutting down ExecutorService 'myScheduler'
+2018-12-18 18:33:36,211 INFO  [ThreadPoolTaskExecutor] Shutting down ExecutorService
+2018-12-18 18:33:36,227 INFO  [AutoConfigurationReportLoggingInitializer] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-12-18 18:33:36,227 ERROR [SpringApplication] Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceInitializerPostProcessor': Unsatisfied dependency expressed through field 'beanFactory'; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi] for bean with name 'servicoBibliotecaBGServer' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:226) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:709) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:534) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:122) ~[spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:751) [spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:387) [spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at br.com.bg.bibliotecaserver.utilitarios.Registro.inicializarContexto(Registro.java:25) [classes/:?]
+	at br.com.bg.bibliotecaserver.utilitarios.Registro.obterRepositorioUsuario(Registro.java:35) [classes/:?]
+	at br.com.bg.bibliotecaserver.TestUsuario.salvar(TestUsuario.java:21) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi] for bean with name 'servicoBibliotecaBGServer' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1380) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:670) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:637) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1489) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:421) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:391) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:222) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1273) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1098) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 42 more
+Caused by: java.lang.ClassNotFoundException: br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_162]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_162]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338) ~[?:1.8.0_162]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_162]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:255) ~[spring-core-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:437) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1428) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:670) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:637) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1489) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:421) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:391) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:222) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1273) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1098) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 42 more
+2018-12-18 18:46:28,641 INFO  [RemoteTestRunner] Starting RemoteTestRunner on LM-RUBENS-LEME with PID 7772 (started by laramara in D:\projetos\github-projetos\bibliotecawebbgserver)
+2018-12-18 18:46:28,657 INFO  [RemoteTestRunner] No active profile set, falling back to default profiles: default
+2018-12-18 18:46:28,735 INFO  [AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@305ffe9e: startup date [Tue Dec 18 18:46:28 BRST 2018]; root of context hierarchy
+2018-12-18 18:46:29,016 INFO  [Version] HV000001: Hibernate Validator 6.0.4.Final
+2018-12-18 18:46:29,407 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-18 18:46:29,563 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'websocketContainerCustomizer' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration.class]]
+2018-12-18 18:46:29,683 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-12-18 18:46:29,683 INFO  [ConfigurationClassBeanDefinitionReader] Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-12-18 18:46:29,948 INFO  [AutowiredAnnotationBeanPostProcessor] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-18 18:46:30,026 INFO  [ThreadPoolTaskExecutor] Initializing ExecutorService 
+2018-12-18 18:46:30,026 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:46:30,026 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:46:30,073 INFO  [ThreadPoolTaskScheduler] Initializing ExecutorService  'myScheduler'
+2018-12-18 18:46:30,073 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myScheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:46:30,880 INFO  [servlet] Initializing Spring embedded WebApplicationContext
+2018-12-18 18:46:30,880 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 2161 ms
+2018-12-18 18:46:31,059 INFO  [ServletRegistrationBean] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-18 18:46:31,059 INFO  [FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 18:46:31,059 INFO  [FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 18:46:31,059 INFO  [FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 18:46:31,059 INFO  [FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 18:46:31,106 WARN  [AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [applicationContext.xml]: Cannot resolve reference to bean 'dataSourceSisLara' while setting bean property 'dataSource'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'dataSourceSisLara' available
+2018-12-18 18:46:31,106 INFO  [ThreadPoolTaskScheduler] Shutting down ExecutorService 'myScheduler'
+2018-12-18 18:46:31,106 INFO  [ThreadPoolTaskExecutor] Shutting down ExecutorService
+2018-12-18 18:46:31,121 INFO  [AutoConfigurationReportLoggingInitializer] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-12-18 18:46:31,199 ERROR [LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'dataSourceSisLara' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'dataSourceSisLara' in your configuration.
+
+2018-12-18 18:48:49,859 INFO  [RemoteTestRunner] Starting RemoteTestRunner on LM-RUBENS-LEME with PID 6752 (started by laramara in D:\projetos\github-projetos\bibliotecawebbgserver)
+2018-12-18 18:48:49,859 INFO  [RemoteTestRunner] No active profile set, falling back to default profiles: default
+2018-12-18 18:48:49,937 INFO  [AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@305ffe9e: startup date [Tue Dec 18 18:48:49 BRST 2018]; root of context hierarchy
+2018-12-18 18:48:50,218 INFO  [Version] HV000001: Hibernate Validator 6.0.4.Final
+2018-12-18 18:48:50,593 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-18 18:48:50,749 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'websocketContainerCustomizer' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration.class]]
+2018-12-18 18:48:50,860 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-12-18 18:48:50,860 INFO  [ConfigurationClassBeanDefinitionReader] Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-12-18 18:48:51,094 INFO  [AutowiredAnnotationBeanPostProcessor] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-18 18:48:51,188 INFO  [ThreadPoolTaskExecutor] Initializing ExecutorService 
+2018-12-18 18:48:51,188 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:48:51,188 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:48:51,235 INFO  [ThreadPoolTaskScheduler] Initializing ExecutorService  'myScheduler'
+2018-12-18 18:48:51,235 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myScheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:48:52,055 INFO  [servlet] Initializing Spring embedded WebApplicationContext
+2018-12-18 18:48:52,055 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 2134 ms
+2018-12-18 18:48:52,222 INFO  [ServletRegistrationBean] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-18 18:48:52,238 INFO  [FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 18:48:52,238 INFO  [FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 18:48:52,238 INFO  [FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 18:48:52,238 INFO  [FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 18:48:52,363 INFO  [MLog] MLog clients using slf4j logging.
+2018-12-18 18:48:52,410 INFO  [C3P0Registry] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-12-18 18:48:52,550 WARN  [AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: No persistence unit with name 'SisLaraPersistenceUnit' found
+2018-12-18 18:48:52,550 INFO  [ThreadPoolTaskScheduler] Shutting down ExecutorService 'myScheduler'
+2018-12-18 18:48:52,550 INFO  [ThreadPoolTaskExecutor] Shutting down ExecutorService
+2018-12-18 18:48:52,566 INFO  [AutoConfigurationReportLoggingInitializer] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-12-18 18:48:52,566 ERROR [SpringApplication] Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: No persistence unit with name 'SisLaraPersistenceUnit' found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1085) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:858) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:122) ~[spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:751) [spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:387) [spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.0.M6.jar:2.0.0.M6]
+	at br.com.bg.bibliotecaserver.utilitarios.Registro.inicializarContexto(Registro.java:25) [classes/:?]
+	at br.com.bg.bibliotecaserver.utilitarios.Registro.obterRepositorioUsuario(Registro.java:35) [classes/:?]
+	at br.com.bg.bibliotecaserver.TestUsuario.salvar(TestUsuario.java:21) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: java.lang.IllegalArgumentException: No persistence unit with name 'SisLaraPersistenceUnit' found
+	at org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager.obtainPersistenceUnitInfo(DefaultPersistenceUnitManager.java:733) ~[spring-orm-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.determinePersistenceUnitInfo(LocalContainerEntityManagerFactoryBean.java:384) ~[spring-orm-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:332) ~[spring-orm-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 39 more
+2018-12-18 18:50:23,601 INFO  [RemoteTestRunner] Starting RemoteTestRunner on LM-RUBENS-LEME with PID 7388 (started by laramara in D:\projetos\github-projetos\bibliotecawebbgserver)
+2018-12-18 18:50:23,601 INFO  [RemoteTestRunner] No active profile set, falling back to default profiles: default
+2018-12-18 18:50:23,664 INFO  [AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1972e513: startup date [Tue Dec 18 18:50:23 BRST 2018]; root of context hierarchy
+2018-12-18 18:50:23,914 INFO  [Version] HV000001: Hibernate Validator 6.0.4.Final
+2018-12-18 18:50:24,321 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-18 18:50:24,477 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'websocketContainerCustomizer' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$UndertowWebSocketConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration; factoryMethodName=websocketContainerCustomizer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration.class]]
+2018-12-18 18:50:24,571 INFO  [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.transaction.config.internalTransactionAdvisor' with a different definition: replacing [Root bean: class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; factoryMethodName=transactionAdvisor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]]
+2018-12-18 18:50:24,585 INFO  [ConfigurationClassBeanDefinitionReader] Skipping bean definition for [BeanMethod:name=transactionalEventListenerFactory,declaringClass=org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration]: a definition for bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' already exists. This top-level bean definition is considered as an override.
+2018-12-18 18:50:24,837 INFO  [AutowiredAnnotationBeanPostProcessor] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-18 18:50:24,915 INFO  [ThreadPoolTaskExecutor] Initializing ExecutorService 
+2018-12-18 18:50:24,915 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.config.TaskExecutorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:50:24,915 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:50:24,962 INFO  [ThreadPoolTaskScheduler] Initializing ExecutorService  'myScheduler'
+2018-12-18 18:50:24,962 INFO  [PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'myScheduler' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-18 18:50:25,774 INFO  [servlet] Initializing Spring embedded WebApplicationContext
+2018-12-18 18:50:25,774 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 2110 ms
+2018-12-18 18:50:25,961 INFO  [ServletRegistrationBean] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-18 18:50:25,961 INFO  [FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 18:50:25,961 INFO  [FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 18:50:25,961 INFO  [FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-18 18:50:25,961 INFO  [FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 18:50:26,102 INFO  [MLog] MLog clients using slf4j logging.
+2018-12-18 18:50:26,152 INFO  [C3P0Registry] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-12-18 18:50:26,293 INFO  [LocalContainerEntityManagerFactoryBean] Building JPA container EntityManagerFactory for persistence unit 'BibliotecaBGPersistenceUnit'
+2018-12-18 18:50:26,324 INFO  [LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: BibliotecaBGPersistenceUnit
+	...]
+2018-12-18 18:50:26,418 INFO  [Version] HHH000412: Hibernate Core {5.2.12.Final}
+2018-12-18 18:50:26,433 INFO  [Environment] HHH000206: hibernate.properties not found
+2018-12-18 18:50:26,496 INFO  [Version] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-18 18:50:26,636 INFO  [AbstractPoolBackedDataSource] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2s9zph9z1i4n1ed1a5djsg|4a14c44f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2s9zph9z1i4n1ed1a5djsg|4a14c44f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/postgres, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-12-18 18:50:26,824 INFO  [Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-12-18 18:50:26,967 INFO  [LobCreatorBuilderImpl] HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-12-18 18:50:26,967 INFO  [BasicTypeRegistry] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3c66b7d8
+2018-12-18 18:50:27,389 WARN  [AbstractEhcacheRegionFactory] HHH020003: Could not find a specific ehcache configuration for cache named [br.com.bg.bibliotecaserver.dominio.Usuario]; using defaults.
+2018-12-18 18:50:27,607 INFO  [LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'BibliotecaBGPersistenceUnit'
+2018-12-18 18:50:28,392 INFO  [RequestMappingHandlerAdapter] Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1972e513: startup date [Tue Dec 18 18:50:23 BRST 2018]; root of context hierarchy
+2018-12-18 18:50:28,442 WARN  [JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-18 18:50:28,489 INFO  [RequestMappingHandlerMapping] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-18 18:50:28,504 INFO  [RequestMappingHandlerMapping] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-18 18:50:28,567 INFO  [SimpleUrlHandlerMapping] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 18:50:28,567 INFO  [SimpleUrlHandlerMapping] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 18:50:28,645 INFO  [SimpleUrlHandlerMapping] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-18 18:50:28,973 INFO  [AnnotationMBeanExporter] Registering beans for JMX exposure on startup
+2018-12-18 18:50:29,004 INFO  [xnio] XNIO version 3.3.8.Final
+2018-12-18 18:50:29,020 INFO  [nio] XNIO NIO Implementation Version 3.3.8.Final
+2018-12-18 18:50:29,114 INFO  [UndertowServletWebServer] Undertow started on port(s) 8080 (http)
+2018-12-18 18:50:29,129 INFO  [RemoteTestRunner] Started RemoteTestRunner in 5.891 seconds (JVM running for 6.941)
+2018-12-18 18:50:29,129 WARN  [Configuracao] Arquivo Jar da aplicação não foi localizado.
+2018-12-18 18:50:29,129 WARN  [AplicacaoBibliotecaServer] Serviço do Biblioteca iniciado.
+2018-12-18 18:50:29,270 INFO  [RepositorioUsuarioBD] Alteração do Usuario [id=1, nome=Rubens Leme, dataCadastro=null]realizada com sucesso.
+2018-12-18 18:50:29,286 INFO  [AnnotationConfigServletWebServerApplicationContext] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1972e513: startup date [Tue Dec 18 18:50:23 BRST 2018]; root of context hierarchy
+2018-12-18 18:50:29,301 INFO  [AnnotationMBeanExporter] Unregistering JMX-exposed beans on shutdown
+2018-12-18 18:50:29,301 INFO  [LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'BibliotecaBGPersistenceUnit'
+2018-12-18 18:50:29,301 INFO  [ThreadPoolTaskScheduler] Shutting down ExecutorService 'myScheduler'
+2018-12-18 18:50:29,317 INFO  [ThreadPoolTaskExecutor] Shutting down ExecutorService

@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import br.com.bg.bibliotecaserver.AplicacaoBibliotecaServer;
+import br.com.bg.bibliotecaserver.repositorios.RepositorioUsuario;
 
 
 public class Registro {
@@ -30,4 +31,10 @@ public class Registro {
 	public static void finalizarContexto() {
 		((AbstractApplicationContext) contexto).close();
 	}
+	public static final RepositorioUsuario obterRepositorioUsuario() {
+		inicializarContexto();
+		return (RepositorioUsuario) (contexto.getBean(RepositorioUsuario.class));
+	}
+	
+	
 }

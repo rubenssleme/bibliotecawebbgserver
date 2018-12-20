@@ -16,9 +16,6 @@
 	<context:annotation-config/>
 	<context:component-scan base-package="br.com.bg" />
 	<tx:annotation-driven transaction-manager="transactionManager"/>
-		
-	<bean id="servicoBibliotecaBGServer" class="br.com.bg.bibliotecabgserver.servicos.rmi.servicoBibliotecaBGServerRmi">
-	</bean>
 	
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="dataSourceBibliotecaBG"/>
@@ -28,16 +25,10 @@
 	    <property name="location" value="/application.properties" />
 	</bean>
 
-	<bean class="org.springframework.remoting.rmi.RmiServiceExporter">
-		<property name="serviceInterface" value="br.com.bg.bibliotecabgcommons.servicos.servicoBibliotecaBGServer" />
-		<property name="service" ref="servicoBibliotecaBGServer" />
-		<property name="serviceName" value="${nome.servico}" />
-		<property name="registryPort" value="${porta.servico}" />
-	</bean>
-
+	
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-        <property name="persistenceUnitName" value="SisLaraPersistenceUnit" />
-        <property name="dataSource" ref="dataSourceSisLara"/>
+        <property name="persistenceUnitName" value="BibliotecaBGPersistenceUnit" />
+        <property name="dataSource" ref="dataSourceBibliotecaBG"/>
     </bean>
     
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
@@ -45,7 +36,7 @@
     </bean>
 			
 	<bean id="fabricaSislara" class="org.mybatis.spring.SqlSessionFactoryBean">
-  		<property name="dataSource" ref="dataSourceSisLara" />
+  		<property name="dataSource" ref="dataSourceBibliotecaBG" />
 	</bean>
 	
 	<bean id="fabricaCEP" class="org.mybatis.spring.SqlSessionFactoryBean">
