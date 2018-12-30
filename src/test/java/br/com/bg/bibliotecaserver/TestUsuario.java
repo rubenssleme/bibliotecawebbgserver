@@ -15,7 +15,7 @@ public class TestUsuario {
     public void salvar() {
         Usuario usuario = new Usuario();
         usuario.setId(1L);
-        usuario.setNome("Rubens Leme");
+        usuario.setNome("Rubens Leme2");
        //usuario.setDataCadastro(dataCadastro);
        // cliente.setDataNascimento(nascto);
         RepositorioUsuario repositorioUsuario = Registro.obterRepositorioUsuario();
